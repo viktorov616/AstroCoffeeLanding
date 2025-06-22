@@ -1,0 +1,9 @@
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--gap);
+
+  width: var(--container-width);
+}

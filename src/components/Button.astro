@@ -1,0 +1,30 @@
+---
+import { getClassList } from "../utils";
+
+const { modifiers } = Astro.props;
+---
+
+<button class:list={getClassList('button', modifiers)}><slot /></button>
+
+<style>
+  .button {
+    padding: 15px 30px;
+
+    font-family: 'Playfair Display';
+    color: var(--dark-text);
+    font-weight: 500;
+    font-size: 14px;
+
+    background-color: var(--gold);
+
+    border-radius: 24px;
+
+    cursor: pointer;
+  }
+
+  .button--link {
+    background-color: transparent;
+    color: var(--white);
+    text-decoration: underline;
+  }
+</style>

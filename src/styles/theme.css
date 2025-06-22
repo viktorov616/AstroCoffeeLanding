@@ -1,0 +1,13 @@
+:root {
+  /* colors */
+  --black: #080402;
+  --white: #fff;
+  --gold: #F9C06A;
+  --dark-text: #1E1E1E;
+  --brown: #442808;
+  --coffee: #603809;
+
+  /* layout */
+  --container-width: 1440px;
+  --gap: 20px;
+}

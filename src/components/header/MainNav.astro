@@ -1,0 +1,36 @@
+---
+const pages = [
+  {name: 'Home', url: '/'},
+  {name: 'Menu', url: '/menu'},
+  {name: 'About Us', url: 'about_us'},
+  {name: 'Contact Us', url: '/contact_us'},
+  ]
+---
+
+<nav>
+  <ul>
+    { pages.map(({name, url}) => (
+      <li><a href={url}>{name}</a></li>
+    )) }
+  </ul>
+</nav>
+
+<style>
+  nav {
+    color: var(--white)
+  }
+
+  ul {
+    display: flex;
+    gap: var(--gap)
+  }
+
+  a {
+    padding: var(--gap);
+    transition: filter 0.3s ease;
+    will-change: filter;
+  }
+  a:hover {
+    filter: brightness(85%);
+  }
+</style>

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/playfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400 900;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/playfairDisplay/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-display: swap;
+  font-weight: 400 900;
+}

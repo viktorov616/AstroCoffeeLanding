@@ -5,7 +5,28 @@ import User from './User.astro'
 ---
 
 <header>
-  <Logo />
-  <MainNav />
-  <User />
+  <div class="header__inner">
+    <Logo />
+    <MainNav />
+    <User />
+  </div>
 </header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--black);
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: var(--gap);
+
+      width: var(--container-width);
+    }
+  }
+</style>
